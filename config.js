@@ -1,5 +1,5 @@
 let fs = require('fs')
-global.owner = ['919539102851'] // Letakan nomor kamu disini
+global.owner = ['919633687665'] // Letakan nomor kamu disini
 global.mods = [] // Moderator?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Pengguna premium tidak memerlukan limit
 global.APIs = { // API Prefix
@@ -31,14 +31,14 @@ global.APIKeys = { // APIKey nya disini
 }
 
 // Sticker WM
-global.packname = 'Eva-Sticker'
-global.author = 'Eva'
+global.packname = 'KRIZSER'
+global.author = 'KRIZSER'
 
 global.wait = '_*Please Wait..*_'
 global.eror = '_*Server Error*_'
 global.fla = 'https://ibb.co/jW31z7n'
 
-global.watermark = '© EVA'
+global.watermark = '© KRIZSER'
 
 global.multiplier = 69 // Semakin tinggi, semakin sulit naik level
 
