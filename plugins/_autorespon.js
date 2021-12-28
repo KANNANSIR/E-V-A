@@ -14,8 +14,8 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? 'Eva is not active' : banned ? 'you are banned' : 'Eva here',
-                '© Eva',
+                isBanned ? 'Eva is not active' : banned ? 'you are banned' : 'KRIZSER here',
+                '© KRIZSER',
                 isBanned ? 'Unban' : banned ? 'Bot Owner' : 'Menu',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
                 m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Support',
@@ -33,7 +33,7 @@ handler.all = async function (m, { isBlocked }) {
 └────
 
 https://github.com/SudoAnirudh/E-V-A
-`.trim(), '© Eva', ' Bot Owner', ',owner', m)
+`.trim(), '© KRIZSER', ' Bot Owner', ',owner', m)
     }
 
     // backup db
@@ -56,7 +56,7 @@ https://github.com/SudoAnirudh/E-V-A
     if (new Date() * 1 - setting.status > 1000) {
         let _uptime = process.uptime() * 1000
         let uptime = clockString(_uptime)
-        await this.setStatus(`Active during ${uptime} | Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Group Only' : 'Public'} | Eva by Anirudh`).catch(_ => _)
+        await this.setStatus(`Active during ${uptime} | Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Group Only' : 'Public'} | KRIZSER by Krishnadas`).catch(_ => _)
         setting.status = new Date() * 1
     }
 
